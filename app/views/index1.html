@@ -1,0 +1,107 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /app/views/layout.html -->
+{% extends 'layout.html' %}
+<!--
+  In /app/views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!--
+  Use this to set the page name which will appear at the
+  start of the <title> tag, followed by the service name.
+  This is often not needed on the homepage, where only the
+  service name is needed. You can also reuse this variable
+  within the <h1>, where they are the same.
+-->
+{% set pageName = "" %}
+
+<!-- For adding a breadcrumb or back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs and https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <br>    <br>
+    <!-- Change the page title here -->
+    <h1>
+      NHS.UK Signposting prototype
+      <span class="nhsuk-caption-xl nhsuk-caption--bottom">Version {{version}}</span>
+    </h1>
+
+    <!-- Add your content here -->
+    <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+
+    <p class="nhsuk-lede-text">
+      This prototype can be used to mock up NHS.uk pages. It contains various templates and content page examples which can be used to generate other similar type pages.
+    </p>
+
+
+
+    <h2>Transactional pages</h2>
+
+    <h3>Order a repeat prescription</h3>
+    <ul>
+      <li><a href="nhs-services/prescriptions/how-to-order-a-repeat-prescription">Order a repeat prescription</a> - existing</li>
+      <li><a href="nhs-services/prescriptions/how-to-order-a-repeat-prescription_v1b">Order a repeat prescription</a> - version 1 (Blue button)</li>
+      <li><a href="nhs-services/prescriptions/how-to-order-a-repeat-prescription_v1g">Order a repeat prescription</a> - version 1 (Green button)</li>
+
+
+    </ul>
+
+    <h3>View your test result</h3>
+    <ul>
+      <li><a href="nhs-services/prescriptions/online-services/view-your-test-results">View your test results</a> - existing</li>
+      <li><a href="nhs-services/prescriptions/online-services/view-your-test-results_v1b">View your test results</a> - version 1 (Blue button)</li>
+      <li><a href="nhs-services/prescriptions/online-services/view-your-test-results_v1g">View your test results</a> - version 1 (Green button)</li>
+
+    </ul>
+    
+
+
+    <hr>
+
+    <h2>Informational pages</h2>
+
+    <h3>Appointments and bookings at your GP surgery</h3>
+    <ul>
+      <li><a href="nhs-services/gps/gp-appointments-and-bookings">Appointments and bookings at your GP surgery</a> - existing</li>
+      <li><a href="nhs-services/gps/gp-appointments-and-bookings_v1">Appointments and bookings at your GP surgery</a> - version 1</li>
+    </ul>
+
+    <h3>Appointments and bookings at your GP surgery</h3>
+    <ul>
+      <li><a href="nhs-services/gps/how-to-register-with-a-gp-surgery">Register with a GP surgery</a> - existing</li>
+      <li><a href="nhs-services/gps/how-to-register-with-a-gp-surgery_v1">Register with a GP surgery</a> - version 1</li>
+    </ul>
+
+    <hr>
+
+    <h3>GPs</h3>
+    <ul>
+      <li><a href="nhs-services/gps">GPs</a> (sub hub)</li>
+    </ul>
+
+    
+    <h2>My account</h2>
+    <ul>
+      <li><a href="account">My account</a></li>
+    </ul>
+
+
+
+    <br>
+
+    <!-- End of content -->
+
+  </div>
+</div>
+{% endblock %}
