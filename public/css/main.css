@@ -9381,3 +9381,25 @@ h3, .nhsuk-heading-m {
 .beta-hub-related-links__list-item {
   padding-bottom: 8px;
 }
+
+.nhsuk-header {
+  background-color: #005eb8;
+}
+
+.nhsuk-header__logo {
+  clear: left;
+}
+
+.nhsuk-header__link--service-short-name {
+  -ms-flex-align: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 0;
+}
+
+.nhsuk-header__service-name {
+  padding-left: 16px;
+  padding-right: 0;
+  padding-top: 0;
+  white-space: nowrap;
+}
