@@ -1,0 +1,385 @@
+{% extends 'template-nhs.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+{% block pageTitle %}
+  Appointments and bookings at your GP surgery - NHS
+{% endblock %}
+
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/nhsuk.css" rel="stylesheet">
+{% endblock %}
+
+
+{% block beforeContent %}
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <ol class="nhsuk-breadcrumb__list">
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">Home</a></li>
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">NHS services</a></li>
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">GPs</a></li>
+  </ol>
+  <p class="nhsuk-breadcrumb__back">
+    <a class="nhsuk-breadcrumb__backlink" href="#">
+      <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+      GPs
+    </a>
+  </p>
+</nav>
+{% endblock %}
+
+
+<!-- Access your NHS accountcontent -->
+{% block content %}
+<br>
+        
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <h1>
+          Register with a GP surgery
+      </h1>
+      
+      <p class="nhsuk-lede-text">Everyone in England can register with a GP surgery or change their GP surgery for free. You can register with most surgeries online.</p>    
+    </div>
+  </div>
+
+  <article>
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+
+        <section>
+          <div class="nhsuk-inset-text">
+            <span class="nhsuk-u-visually-hidden">Information: </span>
+            <p>This page is about registering with a GP surgery or changing your current GP surgery.</p>
+            <p>Find out about:</p>
+
+            <ul>
+              <li><a href="#">Appointments and bookings at your GP surgery</a></li>
+              <li><a href="#">Viewing your test results</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Register or change GP surgery online or using the NHS App</h2>
+
+          <p>You can register with a GP surgery or change your current GP surgery online using the NHS website.</p>
+          
+          <p>To register online:</p>
+          <ol>
+            <li>Enter a post code or use your location to look for GP surgeries in the area you want to register. Most people will need to register near where they live but some surgeries accept patients from further away.</li>
+            <li>Choose a surgery you want to register with that offers online registration.</li>
+            <li>Fill in a registration form. This takes about 15 minutes for each person you want to register.</li>
+          </ol>
+          <p>You should be told when you have been registered. It will usually be within 5 days of the surgery getting your details, but it may take longer.</p>
+
+          <div class="nhsuk-action-link">
+            <a class="nhsuk-action-link__link" href="#">
+              <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="36" width="36">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+              </svg>
+              <span class="nhsuk-action-link__text">Find a GP to register with</span>
+            </a>
+          </div>
+
+          <p>If you have the NHS App, you can use it to change GP surgery.</p>
+          <p>You'll be asked to agree for some of your details to be shared with the new GP surgery.</p>
+          <p>You must already be registered with a GP surgery to use the NHS App.</p>
+
+          <a href=".././../login" role="button" draggable="false" class="nhsuk-button nhsuk-button--login">
+          Log in or open NHS App
+          </a>
+
+          <a href="../../../account-b" role="button" draggable="false" class="nhsuk-button nhsuk-button--create-account-grey">
+            Create an account
+          </a>
+
+          <div class="nhsuk-inset-text">
+            <span class="nhsuk-u-visually-hidden">Information: </span>
+            <p>You do not need to tell your current GP surgery if you're changing. They'll be told automatically once you're registered with your new surgery.</p>
+          </div>
+
+        </section>
+
+        <section>
+          <h2>Other ways to register with a GP surgery</h2>
+          <p>You can also register or change GP surgery by:</p>
+          <ul>
+            <li>going to the surgery you want to register with and filling in a paper form</li>
+            <li>downloading the <a href="#">register with a GP surgery paper form</a>, filling it in and taking it to the surgery you want to register with</li>
+            <li>filling in a form on the surgery's own website (only offered at some surgeries)</li>
+          </ul>
+        </section>
+
+        <section>
+          <div class="nhsuk-expander-group">
+            
+            <details class="nhsuk-details nhsuk-expander">
+              <summary class="nhsuk-details__summary">
+                <span class="nhsuk-details__summary-text">
+                Changing your address
+                </span>
+              </summary>
+              <div class="nhsuk-details__text">
+                <h2>Changing your address with your current GP surgery</h2>
+                <p>Tell your GP surgery directly if your address has changed, or you need to update any other personal details, but do not want to change surgery.</p>
+              </div>
+            </details>
+
+            <details class="nhsuk-details nhsuk-expander">
+              <summary class="nhsuk-details__summary">
+                <span class="nhsuk-details__summary-text">
+                Registering someone else
+                </span>
+              </summary>
+              <div class="nhsuk-details__text">
+                
+                <h2>Registering someone else with a GP surgery</h2>
+                <h3>Registering a baby or child</h3>
+                <p>Children under 16 usually need to be registered by their parent or guardian. This means filling in a separate form.</p>
+                <p>You may also:</p><ul>
+                  <li>need to be registered with the same GP surgery as the child</li>
+                  <li>need to provide proof of ID and address for the child you're registering, such as their birth certificate</li>
+                  <li>be asked to provide ID by the surgery to prove you're the parent or guardian of the child</li>
+                </ul>
+                <p>It can help to provide their personal child health record (red book), if you have it.</p>
+                  
+                  <h3>Registering someone you care for</h3>
+                  <p>You can register someone you care for, including if you're a paid, unpaid, foster or young carer.</p>
+                  <p>We'll ask for your details as well as the details of the person you're registering.</p>
+
+                <div class="nhsuk-inset-text">
+                  <span class="nhsuk-u-visually-hidden">Information: </span>
+                  <h4>Registering someone you care for under the Mental Capacity Act</h4>
+                  <p>If someone over 16 is unable to register with a GP because they cannot make decisions about their care, registration can be done by:</p>
+                  <ul>
+                    <li>a relative</li>
+                    <li>the main carer</li>
+                    <li>a lasting power of attorney</li>
+                    <li>a person appointed by a court under the <a href="">Mental Capacity Act</a></li>
+                  </ul>
+                </div>
+
+              </div>
+            </details>
+
+
+          <details class="nhsuk-details nhsuk-expander">
+            <summary class="nhsuk-details__summary">
+              <span class="nhsuk-details__summary-text">
+              Registering outside your local area
+              </span>
+            </summary>
+
+            <div class="nhsuk-details__text">
+              
+              <h2>Registering with a GP surgery outside your local area</h2>
+              <p>You can register permanently with a GP surgery outside your local area, such as near where you work.</p>
+              <p>Not all GP surgeries accept patients from outside their area. You can check whether a GP surgery does:</p>
+              <ul>
+                <li><a href="#">Finding a GP</a> and filtering for "Accepts out of area registrations" on the results page</li>
+                <li>on the GP surgery's own website</li>
+                <li>by contacting the GP surgery</li>
+              </ul>
+
+              <div class="nhsuk-warning-callout">
+                <h3 class="nhsuk-warning-callout__label">
+                    Important
+                </h3>
+              
+                  <p>Registering with a GP surgery outside of your local area may affect the NHS services you can access, including:</p>
+                  <ul>
+                    <li>home visits and urgent care from your GP, including out-of-hours care</li>
+                    <li>community services like physiotherapy and midwife appointments</li>
+                  </ul>
+                  <p>Speak to the GP surgery and ask them to explain what happens for these services when you register.</p>
+                
+              </div>
+
+            </div>
+          </details>
+
+
+          <details class="nhsuk-details nhsuk-expander">
+            <summary class="nhsuk-details__summary">
+              <span class="nhsuk-details__summary-text">
+              Registering as a temporary patient
+              </span>
+            </summary>
+            <div class="nhsuk-details__text">
+              
+              <h2>Registering with a GP surgery as a temporary patient</h2>
+              <p>You can register with a GP surgery as a temporary patient for up to 3 months.</p>
+              <p>You'll need to fill out a temporary services form, which you can get from GP surgeries.</p>
+              <p>You may want to do this if you're living away from home but do not want to change your GP surgery permanently, or if you're visiting from abroad.</p>
+              <p>After 3 months, you can re-apply as a temporary patient, or apply to register as a permanent patient.</p>
+              <p>If your application for temporary registration is refused, you can still receive any treatment you need immediately for up to 14 days.</p>
+
+                
+            <div class="nhsuk-inset-text">
+              <span class="nhsuk-u-visually-hidden">Information: </span>
+              <p>Find out more about <a href="#">how to access NHS services in England if you're visiting from abroad</a></p>
+            </div>
+
+            </div>
+          </details>
+            
+          </div>
+        </section>
+
+        <section>
+          <h2>What you need to register with a GP surgery</h2>
+          
+          <p>You'll only be asked to give basic information to register with a GP surgery. This includes your name, date of birth and address.</p>
+          <p>You do not need ID, proof of address or proof of immigration status.</p>
+          <p>Having an NHS number can make it easier to find your medical records, but you do not need one to register.</p>
+          <p>As part of registering you'll also be asked for:</p>
+          <ul>
+            <li>the name and address of an emergency contact</li>
+            <li>the name and address of the GP you're registered with now, if you have one</li>
+            <li>the name and address of your carer, if you have one</li>
+          </ul>
+          <p>Sometimes, a GP surgery may ask for extra documents or details for other reasons, like helping to find or transfer your medical records, or to prove you're the parent or guardian of a child you're registering.</p>
+
+          <div class="nhsuk-inset-text">
+            <span class="nhsuk-u-visually-hidden">Information: </span>
+            <p>If you do not have a permanent address, you can register with a GP surgery using a temporary address or the address of the GP surgery.</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Who can register with a GP surgery</h2>
+          <p>Everyone in England can register with a GP surgery, including as a temporary patient <a href="#">if you're visiting from abroad</a>.</p>
+          <p>A GP surgery may refuse your registration if:</p>
+          <ul>
+            <li>they're not accepting new patients</li>
+            <li>you live outside the surgery's area</li>
+            <li>you have been removed from the their patient list before</li>
+          </ul>
+      
+          <div class="nhsuk-warning-callout">
+            <h3 class="nhsuk-warning-callout__label">
+                <span role="text">
+                  <span class="nhsuk-u-visually-hidden">Important: </span>
+                  If a surgery does not accept your registration
+                </span>
+            </h3>
+        
+            <p>If a GP surgery refuses to register you, they must write to you within 14 days to explain why.</p>
+            <p>If you have problems registering with a GP surgery, you can contact:</p>
+            <ul>
+              <li>your local <a href="#">integrated care board (ICB)</a></li>
+              <li><a href="#">Citizens Advice</a></li>
+              <li><a href="#">your local Healthwatch</a></li>
+            </ul>
+        
+          </div>
+
+        </section>
+
+        
+      </div>
+
+    </div>
+  </article>
+  
+  <aside class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <div id="sibling-nav" class="beta-hub-sibling-nav nhsuk-u-padding-top-5">
+        <h2 class="nhsuk-u-font-size-24 nhsuk-u-margin-bottom-4">
+          More in
+            <a href="#">GPs</a>
+          
+        </h2>
+        <nav role="navigation" class="beta-nhsuk-navigation-sideways">
+          <ul class="beta-nhsuk-navigation-sideways__list">
+              
+                  <li class="beta-nhsuk-navigation-sideways__item is-active" aria-current="true">
+                    Register with a GP surgery
+                  </li>
+              
+                  <li class="beta-nhsuk-navigation-sideways__item">
+                    <a href="">
+                      Appointments and bookings at your GP surgery
+                    </a>
+                  </li>
+                
+                  <li class="beta-nhsuk-navigation-sideways__item">
+                    <a href="">
+                      Using an online form to contact your GP surgery
+                    </a>
+                  </li>
+ 
+                  <li class="beta-nhsuk-navigation-sideways__item">
+                    <a href="">
+                      Video consultations
+                    </a>
+                  </li>
+                
+                  <li class="beta-nhsuk-navigation-sideways__item">
+                    <a href="">
+                      What to ask your doctor or other healthcare professional
+                    </a>
+                  </li>
+          
+                  <li class="beta-nhsuk-navigation-sideways__item">
+                    <a href="">
+                      View your GP health record
+                    </a>
+                  </li>
+                
+                  <li class="beta-nhsuk-navigation-sideways__item">
+                    <a href="">
+                      Using online services
+                    </a>
+                  </li>
+                
+                  <li class="beta-nhsuk-navigation-sideways__item">
+                    <a href="">
+                      Online health and prescription services
+                    </a>
+                  </li>
+                
+                  <li class="beta-nhsuk-navigation-sideways__item">
+                    <a href="">
+                      Accessing GP services for someone else, with proxy access
+                    </a>
+                  </li>
+                
+                  <li class="beta-nhsuk-navigation-sideways__item">
+                    <a href="">
+                      Getting a fit note
+                    </a>
+                  </li>
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </aside>
+  
+  <div>
+      <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+        Page last reviewed: 28 July 2025
+        <br>
+        Next review due: 28 July 2028
+      </p>
+  </div>
+  
+
+{% endblock %}
+
+
+{% block pageScripts %}
+<script>
+  $( document ).ready(function() {
+    $('a[href=""], button.nhsuk-search__submit').click(function(e) {
+      e.preventDefault();
+    });
+  });
+</script>
+{% endblock %}

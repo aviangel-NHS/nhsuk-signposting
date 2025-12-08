@@ -1,0 +1,110 @@
+{% extends 'template-nhs-no-my-account.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+{% block pageTitle %}
+Use NHS App services - NHS
+{% endblock %}
+
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/nhsuk.css" rel="stylesheet">
+{% endblock %}
+
+
+
+
+{% block beforeContent %}
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <ol class="nhsuk-breadcrumb__list">
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="">Home</a></li>
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="">NHS App</a></li>
+  </ol>
+  <p class="nhsuk-breadcrumb__back">
+    <a class="nhsuk-breadcrumb__backlink" href="#">
+      <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+      NHS App
+    </a>
+  </p>
+</nav>
+{% endblock %}
+
+
+<!-- Access your NHS accountcontent -->
+{% block content %}
+<br>
+<div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+      <h1>
+          Use NHS App services
+      </h1>
+        <p class="nhsuk-lede-text">Log in to view your health information and manage your healthcare online.</p>
+
+        <article>
+    
+          <section>
+      
+            <p>Access NHS App services using the NHS App or by logging in through the NHS website. You can create an account if you don't have one.</p>
+            <p>You must be aged 13 or over and registered at a GP surgery in England.</p>
+        
+            <!-- Blue button -->
+            <a href="login" role="button" draggable="false" class="nhsuk-button ">
+            Continue
+            </a>
+      
+            <br> <br>  
+            
+            <p>You can:</p>
+            <ul>
+              <li>request repeat prescriptions</li>
+              <li>check test results</li>
+              <li>view messages from the NHS</li>
+              <li>book and manage appointments</li>
+            </ul>
+            
+            <h2>Other ways to use NHS App services</h2>
+            <p>You can also download the NHS App on your smartphone or tablet.</p>
+        
+              
+            <figure class="app-apps-store-link">
+              <div class="nhsuk-c-image__container">
+                <a href="">
+                  <img class="nhsuk-c-image__img" alt="Download on the App stor2e" src="https://www.nhs.uk/static/nhsuk/img/apple-store-badge.2928664fe1fc.svg">
+                </a>
+              </div>
+            </figure>
+          
+            <figure class="app-apps-store-link">
+              <div class="nhsuk-c-image__container">
+                <a href="">
+                  <img class="nhsuk-c-image__img" alt="Download on Google Play" src="https://www.nhs.uk/static/nhsuk/img/google-play-badge.c4182f13038b.png"">
+                </a>
+              </div>
+            </figure>
+        
+          </section>
+    
+        </article>
+
+
+      </div>
+
+
+
+</div>
+
+{% endblock %}
+
+
+{% block pageScripts %}
+<script>
+  $( document ).ready(function() {
+    $('a[href=""], button.nhsuk-search__submit').click(function(e) {
+      e.preventDefault();
+    });
+  });
+</script>
+{% endblock %}

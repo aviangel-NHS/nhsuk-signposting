@@ -1,0 +1,23 @@
+// ==========================================================================
+// COMPONENTS / #Video component 
+   // Styling fix to white video component
+   // eg https://www.nhs.uk/conditions/abdominal-aortic-aneurysm/
+// ==========================================================================
+
+
+.app-brightcove-video {
+  background-color: #fff;
+  border-bottom: 1px solid #d8dde0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+
+.app-brightcove-video--date {
+  font-size: .75rem;
+  line-height: 1.66667;
+  color: #4c6272;
+  padding: 16px;
+}
+

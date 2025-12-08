@@ -1,0 +1,64 @@
+// ==========================================================================
+// COMPONENTS / #NHS.uk header
+   // Styling support the "My account" link in the header
+// ==========================================================================
+  
+
+// Make header nav link centred - not left aligned
+.nhsuk-header__navigation-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+//
+.nhsuk-header__navigation-link {
+  border-bottom: 4px solid transparent;
+}
+
+
+//NHS header - my account
+@media (min-width: 40.0625em) {
+.nhsuk-header__search {
+  float: left;
+  margin-left: 8px;
+}
+}
+
+.nhsuk-header__search {
+  position: relative;
+  text-align: right;
+}
+
+
+.nhsuk-account__login {
+  float: right;
+  margin-left: 1em;
+  margin-right: -16px;
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-account__login {
+      margin-right: -8px;
+  }
+}
+
+.nhsuk-account__login--link, .nhsuk-account__login--link:visited, .nhsuk-account__login--link:hover {
+  color: #fff;
+  padding: 1em;
+}
+
+
+.nhsuk-header__logo {
+  float: left;
+}
+
+@media (max-width: 40.0525em) {
+  .nhsuk-header__search-wrap {
+      clear: both;
+      padding-top: 1px;
+  }
+}

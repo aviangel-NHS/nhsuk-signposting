@@ -1,0 +1,22 @@
+// ==========================================================================
+// COMPONENTS / #Sub hub
+   // Styling fix to for list of links - removed bullets and styles text to be larger links
+// ==========================================================================
+
+// sub hub links
+.beta-hub-key-links {
+  font-size: 22px;
+  list-style-type: none;
+  margin: 0;
+  padding: 1.125em 0;
+}
+
+.beta-hub-key-links__list-item, .beta-hub-after-key-links>h2, .beta-hub-bottom-content>h2, h4, .nhsuk-heading-s {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.55556;
+  display: block;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 16px;
+}

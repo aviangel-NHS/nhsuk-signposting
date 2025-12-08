@@ -1,0 +1,83 @@
+
+
+
+.nhsuk-account__login {
+    float: right;
+    margin-left: 1em;
+    margin-right: -8px;
+    position: relative;
+    z-index: 2;
+    text-align: right;
+}
+
+//---------- mke account text wrap on 2 lines
+.nhsuk-account__login-width-200 {
+    float: right;
+    margin-left: 1px;
+    position: relative;
+    z-index: 2;
+    text-align: right;
+    width: 210px;
+}
+
+.nhsuk-account__login--link-wrap {
+    margin-right: 0px;
+    padding: 0px;
+    text-align: right;
+    color: #ffffff;
+}
+
+
+
+//----------
+
+.nhsuk-account__login--icon {
+    fill: #fff;
+    height: 1.6em;
+    margin-left: .6em;
+    position: relative;
+    top: .4em;
+    width: 1.6em;
+}
+
+.nhsuk-account__login--link:hover, .nhsuk-account__login--link:hover:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+// Get My account to line up with righ
+.nhsuk-account__login--link {
+    margin-right: 0px;
+    padding: 0px;
+    text-align: right;
+}
+
+
+// ------------
+
+.nhsuk-account__login--link-no-icon, .nhsuk-account__login--link-no-icon:visited, .nhsuk-account__login--link-no-icon:hover {
+    color: #fff;
+    padding: 0px;
+}
+
+
+// hover
+.nhsuk-account__login--link-no-icon:hover, .nhsuk-account__login--link-no-icon:hover:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+// Get My account to line up with righ
+.nhsuk-account__login--link-no-icon {
+    margin-right: -0.2em;
+    padding: 0px;
+}
+
+@media (min-width: 40.0625em) {
+    .nhsuk-account__login--link-no-icon, .nhsuk-account__login--link-no-icon:hover {
+        margin-right: 0px;
+        padding: 0px;
+    }
+}
+
+

@@ -1,0 +1,237 @@
+{% extends 'template-nhs.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+{% block pageTitle %}
+Appointments and bookings at your GP surgery - NHS
+{% endblock %}
+
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/nhsuk.css" rel="stylesheet">
+{% endblock %}
+
+
+{% block beforeContent %}
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <ol class="nhsuk-breadcrumb__list">
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">Home</a></li>
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">NHS services</a></li>
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">GPs</a></li>
+  </ol>
+  <p class="nhsuk-breadcrumb__back">
+    <a class="nhsuk-breadcrumb__backlink" href="#">
+      <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+      GPs
+    </a>
+  </p>
+</nav>
+{% endblock %}
+
+
+<!-- Access your NHS accountcontent -->
+{% block content %}
+<br>
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Appointments and bookings at your GP surgery</h1>
+    </div>
+
+    <article>
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+  
+    
+          <section>
+            <p>GP surgeries offer appointments with a range of health professionals including a GP, nurse, clinical pharmacist or physiotherapist, depending on your symptoms or condition.</p>
+            <p>Appointments may be face to face, over the phone or online.</p>
+          </section>
+      
+          <section>
+          <h2>How to book, change or cancel an appointment</h2>
+          <p>If you need to book or change an appointment at your GP surgery, you may be able to</p>
+          <ul>
+            <li>use the appointment form on your GP surgery's website</li>
+            <li>use the NHS App or NHS website. You can <a href="../../login">log in</a> or <a href="../../account-g">create an account</a> if you do not have one</li> 
+            <li>contact the surgery by phone</li> 
+            <li>go to the surgery and ask the receptionist</li> 
+          </ul>
+          <p>Before booking an appointment, your GP surgery may ask what you need help with.</p>
+
+
+            <div class="nhsuk-action-link">
+              
+              <a class="nhsuk-action-link__link" href="#">
+              
+                <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="36" width="36">
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+                </svg>
+                <span class="nhsuk-action-link__text">Find your GP surgery</span>
+              </a>
+            </div>
+            
+            <div class="nhsuk-inset-text">
+              <span class="nhsuk-u-visually-hidden">Information: </span>
+              <p>Call your GP surgery if you need an urgent appointment. If your GP surgery is closed, a recorded message will tell you who to contact.</p>
+            </div>
+    
+          </section>
+      
+          <section>
+            <h2>Evening and Saturday appointments</h2>
+            <p>You can see a healthcare professional on:</p>
+            <ul>
+              <li>weekday evenings between 6.30pm and 8pm</li>
+              <li>Saturdays between 9am and 5pm</li>
+            </ul>
+            <p>Call your GP surgery or use their online services to book evening and Saturday appointments. You may be able to get an appointment on the same day.</p>
+            
+            <p>You may be offered an appointment at:</p>
+            <ul>
+              <li>your GP surgery</li>
+              <li>another local GP surgery</li>
+              <li>another local NHS service</li>
+            </ul>
+          </section>
+
+    
+          <section>
+            <h2>If you're not registered with a GP surgery</h2>
+            <p>You can call any GP surgery to get emergency treatment for up to 14 days if you're not registered with a GP surgery or are away from home.</p>
+            <p>If your treatment will last longer than 14 days, you'll have to register as a temporary or permanent resident.</p>
+            <p>Read more about <a href="#">how to register with a GP surgery</a>.</p>
+          </section>
+        
+          <section>
+              <h2>If you're struggling to make an appointment</h2>
+              <p>If you're struggling to make an appointment, contact your GP surgery directly. Details of the complaints process and surgery management team will usually be on the surgery website.</p>
+              <p>If you're not comfortable raising a complaint directly or do not feel you've had a satisfactory response, you can <a href="#">complain to the NHS</a>.</p>
+          </section>
+      
+      
+          <section>
+            <h2>Other services</h2>
+            <p>Before you make an appointment with your GP surgery, think about what other services might be able to help.</p>
+            <ul>
+              <li>Go to a pharmacy for advice and treatment for common illnesses, aches and pains that do not need a prescription. Read about <a href="#">how pharmacies can help</a>.</li>
+              <li>Call NHS 111 if you have an urgent medical problem, but you're not sure what to do.</li>
+              <li>Visit <a href="#">111 online</a> for urgent medical advice for people aged 5 and over only.</li>
+              <li>Visit a <a href="#">sexual health clinic</a> for testing for sexually transmitted infections and contraception advice.</li></ul>
+            <p>You do not have to make an appointment or register for these services.</p>
+          </section>
+    
+        </div>
+    
+  
+      </div>
+    </article>
+
+
+    <aside class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+        <div id="sibling-nav" class="beta-hub-sibling-nav nhsuk-u-padding-top-5">
+          <h2 class="nhsuk-u-font-size-24 nhsuk-u-margin-bottom-4">
+            More in <a href="#">GPs</a>
+          </h2>
+          <nav role="navigation" class="beta-nhsuk-navigation-sideways">
+            <ul class="beta-nhsuk-navigation-sideways__list">
+             
+                    <li class="beta-nhsuk-navigation-sideways__item">
+                      <a href="#">
+                        How to register with a GP surgery
+                      </a>
+                    </li>
+                  
+                    <li class="beta-nhsuk-navigation-sideways__item">
+                      <a href="#">
+                        Registering with a GP surgery outside your local area
+                      </a>
+                    </li>
+                  
+                    <li class="beta-nhsuk-navigation-sideways__item is-active" aria-current="true">
+                      Appointments and bookings at your GP surgery
+                    </li>
+                  
+                    <li class="beta-nhsuk-navigation-sideways__item">
+                      <a href="#">
+                        Using an online form to contact your GP surgery
+                      </a>
+                    </li>
+             
+                    <li class="beta-nhsuk-navigation-sideways__item">
+                      <a href="#">
+                        Video consultations
+                      </a>
+                    </li>
+                  
+                    <li class="beta-nhsuk-navigation-sideways__item">
+                      <a href="#">
+                        What to ask your doctor or other healthcare professional
+                      </a>
+                    </li>
+                  
+                    <li class="beta-nhsuk-navigation-sideways__item">
+                      <a href="#">
+                        View your GP health record
+                      </a>
+                    </li>
+                  
+                    <li class="beta-nhsuk-navigation-sideways__item">
+                      <a href="#">
+                        Using online services
+                      </a>
+                    </li>
+                  
+                    <li class="beta-nhsuk-navigation-sideways__item">
+                      <a href="#">
+                        Online health and prescription services
+                      </a>
+                    </li>
+                  
+                    <li class="beta-nhsuk-navigation-sideways__item">
+                      <a href="#">
+                        Accessing GP services for someone else, with proxy access
+                      </a>
+                    </li>
+         
+                    <li class="beta-nhsuk-navigation-sideways__item">
+                      <a href="#">
+                        Getting a fit note
+                      </a>
+                    </li>
+                  
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </aside>
+
+    <div>
+      <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+        Page last reviewed: 10 March 2023
+        <br>
+        Next review due: 10 March 2026
+      </p>
+    </div>
+
+    
+  </div>
+</div>
+
+{% endblock %}
+
+
+{% block pageScripts %}
+<script>
+  $( document ).ready(function() {
+    $('a[href=""], button.nhsuk-search__submit').click(function(e) {
+      e.preventDefault();
+    });
+  });
+</script>
+{% endblock %}

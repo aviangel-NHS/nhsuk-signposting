@@ -1,0 +1,294 @@
+// ==========================================================================
+// PAGE / #HOMEPAGE
+// ==========================================================================
+
+// Why isn't this code working??
+h2, .nhsuk-heading-l {
+    font-size: 32px;
+    font-size: 2rem;
+    line-height: 1.25;
+}
+
+@media (min-width: 40.0625em) {
+    h2, .nhsuk-heading-l {
+        font-size: 32px;
+        font-size: 2rem;
+        line-height: 1.25;
+        margin-bottom: 24px;
+    }
+}
+
+
+//------------ Make background row and image span entire browser widths ----------------- 
+
+.app-width-container--full {
+	margin: 0;
+	max-width: none;
+}
+
+/* Might help create space between each section*/
+.app-section__content {
+    padding-bottom: 64px;
+    padding-top: 64px;
+}
+
+
+//------------ Image header ----------------- 
+/* Make H1 lead text below heading smaller */
+.leadtext-resize-smaller {
+    @include mq($until: tablet) {
+      font-size: 2rem; // for mobile
+    }
+    @include mq($until: desktop) {
+      font-size: 2rem; // for tablet 
+    }
+    font-size: 2.7rem; // for desktop
+  }
+  
+
+//------------ Make Primary cards overlay image  ----------------- 
+
+//first value is mobile (margin-top)
+.beta-card-overlay {
+    @include mq($until: tablet) {
+      margin-top: -100px; // for mobile
+    }
+    @include mq($until: desktop) {
+      margin-top: -200px; // for tablet 
+    }
+    margin-top: -180px; // for desktop
+  }
+  
+  
+  .beta-card-overlay-blue-header {
+    @include mq($until: tablet) {
+      margin-top: -140px; // for mobile
+    }
+    @include mq($until: desktop) {
+      margin-top: -150px; // for tablet 
+    }
+    margin-top: -130px; // for desktop
+  }
+  
+  .beta-card-overlay-blue-header-small-h1 {
+    @include mq($until: tablet) {
+      margin-top: -140px; // for mobile
+    }
+    @include mq($until: desktop) {
+      margin-top: -130px; // for tablet 
+    }
+    margin-top: -130px; // for desktop
+  }
+  
+  //fix the issue of A-Z boxes breaking between desktop and tablet breakpoint
+  .nhsuk-hero--image {
+    @include mq($until: tablet) {
+      min-height: 300px; // for mobile
+      padding-bottom: 150px;
+  
+    }
+    @include mq($until: desktop) {
+              // for tablet 
+    }
+      min-height: 300px; // for desktop
+      padding-bottom: 90px; //was 130 but too big
+  
+  
+    //background-color: #ffeb3b;
+  }
+  
+//------------   ----------------- 
+
+//Image blue box
+.nhsuk-hero2 {
+    background-color: #005eb8;
+    color: #ffffff;
+    position: relative;
+    /* background: linear-gradient(to bottom, #005eb8 0%, #005eb8 calc(100% - 100px), transparent calc(100% - 100px), transparent 100%); */
+}
+
+.nhsuk-blue-box {
+    background: #005eb8;
+}
+
+
+
+/* Change colour of H1 small version */
+.h1-light-blue {
+  color: #d2e2f1;
+}
+
+
+/* Make H1 lead text below heading smaller */
+.leadtext-resize-smaller {
+  @include mq($until: tablet) {
+    font-size: 2rem; // for mobile
+  }
+  @include mq($until: desktop) {
+    font-size: 2rem; // for tablet 
+  }
+  font-size: 2.7rem; // for desktop
+}
+
+//------------ Primary card styling ----------------- 
+
+// container - remove padding
+// append hidden nav to this, don't remove
+.beta-nhsuk-navigation {
+    display: flex;
+  
+    @include mq($until: tablet) {
+      position: relative;
+      z-index: 10;
+    }
+  
+    @include mq($from: tablet) {
+      border-top: 1px solid rgba(255, 255, 255, .2);
+    }
+  }
+  
+  // ul of visible nav
+  .beta-nhsuk-header__navigation-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  
+    @include mq($from: desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .js-enabled & {
+      display: flex;
+    }
+  }
+  
+
+
+
+
+
+
+
+//------------ Manage your health ----------------- 
+
+
+.nhsuk-action-link {
+    padding-bottom: 8px !important;
+    padding-top: 8px;
+    margin-bottom: 0;
+}
+
+.nhsuk-action-link__link {
+    font-size: 22px;
+    font-size: 1.375rem;
+    line-height: 1.45455;
+}
+
+
+//------------ Homepage blue button links ----------------- 
+
+//Blue button
+.app-list-signage {
+    list-style: none;
+    padding-left: 0;
+    padding-top: 8px;
+}
+
+.app-list-signage-link {
+    color: #fff;
+}
+
+.app-list-signage li a {
+    background: #005eb8;
+    color: #fff;
+    display: block;
+    padding: 12px 24px;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+}
+
+.app-list-signage li a:hover {
+    background: #003d78;
+    box-shadow: none;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.app-list-signage li a:focus {
+    background: #ffeb3b;
+    box-shadow: inset 0 -4px 0 0 #212b32;
+    color: #212b32;
+}
+
+
+.app-list-signage li a:focus .nhsuk-icon {
+    fill: #212b32;
+  }
+
+.app-list-signage li a .nhsuk-icon {
+    fill: #fff;
+    height: 24px;
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    width: 24px;
+}
+
+
+
+//------------ Secondary cards ----------------
+
+//Fix secondary card styling in "More information and advice"
+.beta-card--plain {
+    background: rgba(0, 0, 0, 0);
+    border-bottom: 4px solid #d8dde0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+}
+
+.beta-card--plain .beta-card__content {
+    padding: 0 0 32px;
+}
+
+h3, .nhsuk-heading-m {
+    font-size: 1.5rem;
+    line-height: 1.33333;
+}
+
+
+
+//------------ Code to change the background colour of cards if background alternates grey to white ----------------
+
+//background-color for 111 card;
+.nhsuk-card-grey {
+    background-color: #f0f4f5;
+  }
+  
+  //background-color for 111 card;
+  .nhsuk-card-white {
+    background-color: #fff;
+  }
+
+
+
+//------------ Background row colour ----------------
+
+//alternating background color - white to grey
+
+.nhsuk-main-wrapper {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.app-homepage>*:nth-child(n+3):nth-child(even) {
+    background-color: #fff;
+}
+
+.app-homepage>*:nth-child(n+3):nth-child(even) {
+    background-color: #fff;
+}
+

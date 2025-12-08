@@ -1,0 +1,28 @@
+// ==========================================================================
+// COMPONENTS / #Primary cards
+   // Styling fix to support out-of-date primary cards on nhs.uk hubs  
+// ==========================================================================
+
+//Sub hub page list of links
+
+.beta-icon__chevron-right-circle {
+  fill: #005eb8;
+}
+
+.beta-hub-arrow {
+  display: block;
+  margin-top: -8px;
+  position: absolute;
+  right: 24px;
+  top: 50%;
+}
+
+.beta-card__content {
+  padding-right: 75px;
+}
+
+
+
+
+
+

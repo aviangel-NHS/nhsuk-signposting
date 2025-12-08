@@ -1,0 +1,186 @@
+{% extends 'template-nhs.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+{% block pageTitle %}
+  How to order a repeat prescription - NHS
+{% endblock %}
+
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/nhsuk.css" rel="stylesheet">
+{% endblock %}
+
+
+{% block beforeContent %}
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <ol class="nhsuk-breadcrumb__list">
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">Home</a></li>
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">NHS services</a></li>
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">Prescriptions</a></li>
+  </ol>
+  <p class="nhsuk-breadcrumb__back">
+    <a class="nhsuk-breadcrumb__backlink" href="#">
+      <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+      Prescriptions
+    </a>
+  </p>
+</nav>
+{% endblock %}
+
+
+<!-- How to order a repeat prescription content -->
+{% block content %}
+<br>
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>How to order a repeat prescription</h1>
+    </div>
+
+    <article>
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+
+          <section>
+            
+            <p class="nhsuk-lede-text app-lede-text">If you take medicine regularly, you'll usually have a repeat prescription. This means you can order your medicine without having to see a GP every time.</p>
+            <p>It's important to request the prescription up to 5 working days before you need your medicine.</p>
+          </section>
+        
+        
+          <section>
+            <h2>Order repeat prescriptions online</h2>
+            <p>You can order repeat prescriptions online by logging into the NHS App or the NHS website.</p>
+            <p>You can choose a high-street pharmacy to collect your prescription from. Some pharmacies may offer delivery.</p>
+
+      <!-- Blue button -->
+      <a href=".././../login" role="button" draggable="false" class="nhsuk-button  nhsuk-button--login ">
+        Log in
+      </a>
+            
+            <br>            <br>
+            <p>You can <a href="./../../account-b">create an account</a> if you do not have one.</p>              
+          </section>
+          <br>
+
+          <section>
+            <h2>Other ways to order a repeat prescription</h2>
+          
+            <p>You can also order a repeat prescription:</p>
+            <ul>
+              <li>using other GP online services - ask your GP surgery which one you can use</li>
+              <li>by contacting your GP surgery</li>
+              <li>directly from your usual pharmacy, if your GP has set up direct dispensing</li>
+              <li>from <a href="#">internet pharmacies</a> registered with the NHS</li>
+            </ul>
+            <p>You can see <a href="#">a list of internet pharmacies</a> registered with the NHS and find out more about <a href="#">online health and prescription services</a>.</p>
+          </section>
+        
+
+          <section>
+            <h2>Contacting your GP surgery</h2>
+            
+            <p>Ask your GP surgery how to let them know when you need your repeat prescription.</p>
+            <p>When your prescription is ready you can pick it up in person, or your GP surgery may be able to send it to a pharmacy of your choice.</p>
+            <p>If you nominate a pharmacy, the pharmacy may be able to deliver your medicine to you or let you know when it’s ready for you to collect.</p>
+            <p>Speak to your local pharmacy to find out what they offer.</p>
+
+          
+            <div class="nhsuk-action-link">
+              <a class="nhsuk-action-link__link" href="#">
+              
+                <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="36" width="36">
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+                </svg>
+                <span class="nhsuk-action-link__text">Find a GP</span>
+              </a>
+            </div>
+
+          </section>
+  
+        </div>
+  
+  
+      </div>
+    </article>
+
+
+    <aside class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+        <div id="sibling-nav" class="beta-hub-sibling-nav nhsuk-u-padding-top-5">
+          <h2 class="nhsuk-u-font-size-24 nhsuk-u-margin-bottom-4">
+            More in
+              <a href="#">Prescriptions</a>
+            
+          </h2>
+          <nav role="navigation" class="beta-nhsuk-navigation-sideways">
+            <ul class="beta-nhsuk-navigation-sideways__list">
+
+              <li class="beta-nhsuk-navigation-sideways__item">
+                        <a href="#">
+                          Check if you can get free prescriptions
+                        </a>
+              </li>
+                    
+               <li class="beta-nhsuk-navigation-sideways__item">
+                        <a href="#">
+                          NHS prescription charges
+                        </a>
+               </li>
+                    
+              <li class="beta-nhsuk-navigation-sideways__item">
+                        <a href="#">
+                          Save money with a prescription prepayment certificate (PPC)
+                        </a>
+              </li>
+                    
+              <li class="beta-nhsuk-navigation-sideways__item">
+                        <a href="#">
+                          Emergency prescriptions
+                        </a>
+              </li>
+                    
+              <li class="beta-nhsuk-navigation-sideways__item is-active" aria-current="true">
+                        How to order a repeat prescription
+              </li>
+                    
+              <li class="beta-nhsuk-navigation-sideways__item">
+                        <a href="#">
+                          Collect a prescription for someone else
+                        </a>
+              </li>
+                    
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </aside>
+
+    <div>
+      <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+        Page last reviewed: 17 October 2023
+        <br>
+        Next review due: 17 October 2026
+      </p>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
+
+
+{% block pageScripts %}
+<script>
+  $( document ).ready(function() {
+    $('a[href=""], button.nhsuk-search__submit').click(function(e) {
+      e.preventDefault();
+    });
+  });
+</script>
+{% endblock %}

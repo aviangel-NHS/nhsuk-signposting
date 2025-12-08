@@ -1,0 +1,110 @@
+// Import NHS.UK frontend library
+@import 'node_modules/nhsuk-frontend/packages/nhsuk';
+
+// Components that are not in the NHS.UK frontend library
+@import 'components/list-border';
+@import 'components/related-nav';
+
+//added
+
+//@import '_newhomepage'; causes the A-Z to float
+
+//@import 'components/homepage';
+@import 'components/beta-hub-cards';
+@import 'components/nhsuk-header';
+@import 'components/sideways-navigation';
+@import 'components/sub-hub';
+@import 'components/breadcrumb';
+@import 'components/app-brightcove-video';
+@import 'components/health-a-z';
+@import 'components/related-links';
+@import 'components/do-dont-list';
+@import 'components/app-store';
+@import 'components/related-nav';
+@import 'components/list-border';
+@import 'components/secondary-button-grey';
+
+
+
+
+///////////////////////////////////////////
+// Add your custom CSS/Sass styles below...
+///////////////////////////////////////////
+  
+section+section>h2 {
+    padding-top: 16px;
+}
+
+.nhsuk-button {
+    margin-bottom: 12px;
+}   
+
+
+
+h2, .nhsuk-heading-l {
+    font-size: 1.5rem;
+    line-height: 1.22222;
+} 
+
+@media (min-width: 40.0625em) {
+    h2, .nhsuk-heading-l {
+        font-size: 32px;
+        font-size: 2rem;
+        line-height: 1.25;
+    }
+}
+
+h3, .nhsuk-heading-m {
+    font-size: 1.375rem;
+    line-height: 1.31818;
+
+}
+
+
+  
+
+.beta-hub-key-links__list-item, .beta-hub-after-key-links>h2, .beta-hub-bottom-content>h2, h4, .nhsuk-heading-s {
+    font-size: 1.125rem;
+    line-height: 1.55556;
+    display: block;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+
+@media (min-width: 40.0625em) {
+    .beta-hub-key-links__list-item, .beta-hub-after-key-links>h2, .beta-hub-bottom-content>h2, h4, .nhsuk-heading-s {
+        font-size: 22px;
+        font-size: 1.375rem;
+        line-height: 1.45455;
+    }
+}
+
+.nhsuk-lede-text {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+
+@media (min-width: 40.0625em) {
+    .nhsuk-lede-text {
+        font-size: 22px;
+        font-size: 1.375rem;
+        line-height: 1.45455;
+    }
+}
+
+// GPs related services top border
+.beta-hub-border-top {
+    border-top: 4px solid hsla(0, 0%, 80%, .5);
+    padding-top: 40px;
+}
+
+
+// related services
+.beta-hub-related-links__list-item {
+    padding-bottom: 8px;
+}

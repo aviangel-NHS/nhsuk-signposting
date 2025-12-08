@@ -1,0 +1,18 @@
+
+.app-apps-store-link {
+    margin: 8px;
+    margin-left: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+}
+
+.app-apps-store-link img {
+    width: 100%;
+}
+
+.app-apps-store-link:focus {
+    background-color: #ffeb3b !important;
+    border: 4px solid #ffeb3b !important;
+    box-shadow: 0 -2px #ffeb3b, 0 4px #212b32 !important;
+}

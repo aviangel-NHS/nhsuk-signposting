@@ -1,0 +1,101 @@
+{% extends 'template-nhs-no-my-account.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+{% block pageTitle %}
+ Log in
+{% endblock %}
+
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/nhsuk.css" rel="stylesheet">
+{% endblock %}
+
+
+
+
+<!-- Access your NHS accountcontent -->
+{% block content %}
+<br>
+<div class="nhsuk-grid-row">
+
+  <br>
+    <div class="nhsuk-grid-column-two-thirds">
+      <h1>
+        Log in to your NHS account
+      </h1>
+
+    
+      <section>
+
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label" for="email-address">
+            Email address
+          </label>
+          <input class="nhsuk-input nhsuk-input--width-20" id="email-address" name="emailAddress" type="text">
+        </div>
+
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label" for="password">
+            Password
+          </label>
+          <input class="nhsuk-input nhsuk-input--width-20" id="password" name="password" type="text">
+        </div>
+
+        <p><a href="forgot-password">Forgot password?</a></p>
+
+        <!-- Green button -->
+        <a href="" role="button" draggable="false" class="nhsuk-button">
+          Continue
+        </a>
+                    
+        <br>        <br>
+
+        <p><a href="#">Log in with a passkey</a></p>
+
+        <p class="nhsuk-heading-m">or</p>
+            
+        <a href="create-account-steps" role="button" draggable="false" class="nhsuk-button  nhsuk-button--create-account-grey">
+          Create NHS account
+        </a>
+        <br>        <br>
+
+        <p>An NHS account allows you to access a range of online health services with one set of login details.
+          <br>
+          <a href="#">Learn more about NHS account</a>.</p>
+
+            <div class="nhsuk-card">
+              <div class="nhsuk-card__content">
+                <h2 class="nhsuk-card__heading nhsuk-heading-s">Trouble with logging in?</h2>
+                <p class="nhsuk-card__description"></p>
+                <ul class="nhsuk-list">
+                  <li><a href="#">I've lost access to my email address</a></li>
+                  <li><a href="#">I'm not sure if I have an account</a></li>
+                  <li><a href="#">Visit our Help centre</a></li>
+                </ul>
+              </div>
+            </div>
+                  
+                     
+  
+      </section>
+    
+
+
+    </div>
+
+</div>
+
+{% endblock %}
+
+
+{% block pageScripts %}
+<script>
+  $( document ).ready(function() {
+    $('a[href=""], button.nhsuk-search__submit').click(function(e) {
+      e.preventDefault();
+    });
+  });
+</script>
+{% endblock %}

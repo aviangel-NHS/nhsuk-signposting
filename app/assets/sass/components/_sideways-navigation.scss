@@ -1,0 +1,31 @@
+// ==========================================================================
+// COMPONENTS / #Sideways navigation (bottom content)
+   // Styling to support sideways navigation at the bottom of large topic pages
+   // eg Excercise sub hub and topic pages www.nhs.uk/live-well/exercise/exercise-health-benefits
+// ==========================================================================
+
+//sideways navigation (bottom content)
+.beta-nhsuk-navigation-sideways__item.is-active {
+  border-left: 4px solid #212b32;
+  color: #212b32;
+  margin-left: -12px;
+  padding-left: 8px;
+}
+
+.beta-nhsuk-navigation-sideways__item {
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+.beta-nhsuk-navigation-sideways__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 12px;
+}
+
+.beta-nhsuk-navigation-sideways__item--title {
+  margin-left: -12px;
+}
+
+
+

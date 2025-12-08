@@ -1,0 +1,102 @@
+
+
+
+//(Paul's code)
+//.nhsuk-hero--image { 
+//    min-height: 390px;
+//}
+
+
+//first value is mobile (Avi's code)
+.nhsuk-hero--image {
+    @include mq($until: desktop) {
+        min-height: 350px;
+    }
+    min-height: 390px;
+    padding-bottom: 130px;
+  }
+
+//first value is mobile (Avi's code)
+.nhsuk-hero--bluebackground {
+    @include mq($until: desktop) {
+        min-height: 350px;
+    }
+    min-height: 340px;
+  }
+
+
+
+.nhsuk-hero {
+    background-color: white;
+    color: #ffffff;
+    position: relative;
+    // background-position: center calc(100% - 100px);
+}
+
+/* Media query for mobile devices - Avi Added */
+@media (max-width: 25.0625em) {
+    //.nhsuk-hero {
+        // background-position: center calc(100% - 300px);
+        //background-position-x: -1020px;
+    //}
+}
+  
+  
+
+
+
+.nhsuk-hero--blue-bg {
+    background-image: linear-gradient(to bottom, #005eb8 0%, #005eb8 calc(100% - 30px), transparent calc(100% - 30px), transparent 100%)!important;
+
+}
+
+
+.nhsuk-hero--image-description .nhsuk-hero-content {
+    bottom: -248px;
+}
+
+
+.nhsuk-hero--image .nhsuk-hero__overlay {
+    background-color: rgba(181, 56, 56, 0);
+}
+
+.nhsuk-hero--image-description .nhsuk-hero-content {
+    //background-color: #ffffff;
+    //color: #212b32;
+
+    margin-bottom: 40px;
+    background: #005eb8;
+    color: #ffffff;
+    border: 1px solid #d8dde0;
+    position: relative;
+    width: 100%;
+    border: none;
+    bottom: -148px;
+}
+
+
+
+
+.nhsuk-card__description {
+    color: #212b32;
+}
+
+
+//V5 Original hero image
+.nhsuk-hero2 {
+    background-color: #005eb8;
+    color: #ffffff;
+    position: relative;
+    /* background: linear-gradient(to bottom, #005eb8 0%, #005eb8 calc(100% - 100px), transparent calc(100% - 100px), transparent 100%); */
+}
+
+.nhsuk-blue-box {
+    background: #005eb8;
+}
+
+
+//list of action links
+.action-link-list {
+    list-style: none;
+    padding-left: 0;
+}

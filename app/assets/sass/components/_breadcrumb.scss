@@ -1,0 +1,21 @@
+// ==========================================================================
+// COMPONENTS / #Breadcrumb
+   // Styling fix to add padding and support nhs.uk breadcrumbs code thats not using most recent component code
+// ==========================================================================
+
+.beta-breadcrumb {
+  background-color: rgba(0, 0, 0, 0);
+  padding-top: 20px;
+  padding-bottom: 16px;
+
+}
+
+// !!! There doesn't seem to be any padding on bottom
+//  Check if padding changes on different breakpoints
+.nhsuk-breadcrumb {
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+
+
+
