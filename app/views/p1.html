@@ -3,12 +3,16 @@
 <!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
 
 <!-- Extends the layout from /app/views/layout.html -->
-{% extends 'layout.html' %}
+{% extends 'layout-p1.html' %}
 <!--
   In /app/views/layout.html you can:
     - change the header and footer
     - add custom CSS and JavaScript
 -->
+
+{% block pageTitle %}
+  P1
+{% endblock %}
 
 <!--
   Use this to set the page name which will appear at the
@@ -32,65 +36,74 @@
 
     <br>   
     <!-- Change the page title here -->
-    <h1>
-      P1
-    </h1>
+
 
     <!-- Add your content here -->
     <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
 
-    <h2 class="nhsuk-heading-m">Order a repeat prescription</h2>
-    <ul>
-      <li>
-        <a href="nhs-services/prescriptions/how-to-order-a-repeat-prescription">Order a repeat prescription</a> 
-       <br> current
-      </li>  
-      <li>
-        <a href="nhs-services/prescriptions/how-to-order-a-repeat-prescription_v1b">Order a repeat prescription</a>  
-        <br> New (blue button)
-      </li>
-    </ul>
 
-    <hr>
-    <h2 class="nhsuk-heading-m">View your test results</h2>
-    <ul>
-      <li>
-        <a href="nhs-services/prescriptions/online-services/view-your-test-results_v1b">View your test results</a> 
-        <br> new (blue button)
-      </li>  
-      <li>
-        <a href="nhs-services/prescriptions/online-services/view-your-test-results">View your test results</a>  
-        <br> current
-      </li>
-    </ul>
 
-    <hr>
+    <div class="nhsuk-card">
+      <div class="nhsuk-card__content">
+        <h2 class="nhsuk-heading-m">Order a repeat prescription</h2>
+        <ul>
+          <li>
+            <a href="nhs-services/prescriptions/how-to-order-a-repeat-prescription">Option 1</a> 
+       
+          </li>  
+          <li>
+            <a href="nhs-services/prescriptions/how-to-order-a-repeat-prescription_v1b">Option 2</a>
+          </li>
+        </ul>
+      </div>
+    </div> 
 
-    <h2 class="nhsuk-heading-m">Register with a GP surgery</h2>
-    <ul>
-      <li>
-        <a href="nhs-services/gps/how-to-register-with-a-gp-surgery">Register with a GP surgery</a>  
-        <br> current
-      </li>  
-      <li>
-        <a href="nhs-services/gps/how-to-register-with-a-gp-surgery_v1">New design: Register with a GP surgery</a>  
-        <br> new (text links)
-      </li>
-    </ul>
+    <div class="nhsuk-card">
+      <div class="nhsuk-card__content">
+        <h2 class="nhsuk-heading-m">View your test results</h2>
+        <ul>
+          <li>
+            <a href="nhs-services/prescriptions/online-services/view-your-test-results_v1b">Option 1</a>
+          </li>  
+          <li>
+            <a href="nhs-services/prescriptions/online-services/view-your-test-results">Option 2</a>
+          </li>
+        </ul>
+      </div>
+    </div> 
 
-    <hr>
 
-    <h2 class="nhsuk-heading-m">Appointments and bookings at your GP surgery</h2>
-    <ul>
-      <li>
-        <a href="nhs-services/gps/gp-appointments-and-bookings_v1">Appointments and bookings at your GP surgery</a> 
-        <br> new (text links)
-      </li>  
-      <li>
-        <a href="nhs-services/gps/gp-appointments-and-bookings">Appointments and bookings at your GP surgery</a>  
-        <br> current
-      </li>
-    </ul>
+    <div class="nhsuk-card">
+      <div class="nhsuk-card__content">
+        <h2 class="nhsuk-heading-m">Register with a GP surgery</h2>
+        <ul>
+          <li>
+            <a href="nhs-services/gps/how-to-register-with-a-gp-surgery">Option 1</a>
+          </li>  
+          <li>
+            <a href="nhs-services/gps/how-to-register-with-a-gp-surgery_v1">Option 2</a>
+          </li>
+        </ul>   
+      </div>
+    </div> 
+
+
+
+    <div class="nhsuk-card">
+      <div class="nhsuk-card__content">
+        <h2 class="nhsuk-heading-m">Appointments and bookings at your GP surgery</h2>
+        <ul>
+          <li>
+            <a href="nhs-services/gps/gp-appointments-and-bookings_v1">Option 1</a>
+          </li>  
+          <li>
+            <a href="nhs-services/gps/gp-appointments-and-bookings">Option 2</a>
+          </li>
+        </ul>     
+      </div>
+    </div> 
+
+
 
 
 
