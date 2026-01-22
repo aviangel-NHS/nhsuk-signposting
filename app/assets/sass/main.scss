@@ -24,13 +24,38 @@
 @import 'components/list-border';
 @import 'components/secondary-button-grey';
 
+@import 'components/nhsuk-expander';
 
+//@import 'components/buttons';
 
 
 ///////////////////////////////////////////
 // Add your custom CSS/Sass styles below...
 ///////////////////////////////////////////
   
+
+//// Make button 100% on mobile
+.nhsuk-button-full-width {
+    width: 100%;
+}
+
+
+@media (min-width: 40.0625em) {
+    .nhsuk-button {
+        line-height: 1.2631578947;
+        margin-bottom: 36px;
+        min-height: 3.5rem;
+        padding: .875rem 1rem;
+        width: auto;
+    }
+}
+
+///////////////////////////////////////////
+
+
+
+
+
 section+section>h2 {
     padding-top: 16px;
 }

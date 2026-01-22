@@ -1,9 +1,14 @@
 .nhsuk-do-dont-list {
     ol>li:last-child, ul>li:last-child, .nhsuk-list>li:last-child {
-        margin-bottom: 0;
+        margin-bottom: 0px;
     }
     p {
         margin-bottom: 0px;
     }
 }
 
+@media (min-width: 40.0625em) {
+    ol > li, ul > li, .nhsuk-list > li {
+        margin-bottom: 820px;
+    }
+}

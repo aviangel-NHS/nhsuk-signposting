@@ -9220,8 +9220,11 @@ button.nhsuk-back-link__link {
   padding-bottom: 40px;
 }
 
-.nhsuk-do-dont-list {
-  padding-bottom: 12px;
+.nhsuk-do-dont-list ol > li:last-child, .nhsuk-do-dont-list ul > li:last-child, .nhsuk-do-dont-list .nhsuk-list > li:last-child {
+  margin-bottom: 0px;
+}
+.nhsuk-do-dont-list p {
+  margin-bottom: 0px;
 }
 
 .app-apps-store-link {
@@ -9318,6 +9321,26 @@ button.nhsuk-back-link__link {
   top: 4px;
 }
 
+.nhsuk-expander .nhsuk-details__summary {
+  background-color: #fff;
+  border-top: 4px solid rgba(0, 0, 0, 0);
+  display: block;
+  padding: 20px 24px 24px;
+}
+
+.nhsuk-button-full-width {
+  width: 100%;
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-button {
+    line-height: 1.2631578947;
+    margin-bottom: 36px;
+    min-height: 3.5rem;
+    padding: 0.875rem 1rem;
+    width: auto;
+  }
+}
 section + section > h2 {
   padding-top: 16px;
 }

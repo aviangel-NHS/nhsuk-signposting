@@ -1,5 +1,8 @@
-
-  
 .nhsuk-do-dont-list {
-    padding-bottom: 12px;
+    ol>li:last-child, ul>li:last-child, .nhsuk-list>li:last-child {
+        margin-bottom: 0px;
+    }
+    p {
+        margin-bottom: 0px;
+    }
 }
