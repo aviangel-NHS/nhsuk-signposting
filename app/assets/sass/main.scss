@@ -7,9 +7,9 @@
 
 //added
 
-//@import '_newhomepage'; causes the A-Z to float
+//@import '_newhomepage'; //causes the A-Z to float
 
-//@import 'components/homepage';
+@import 'components/homepage';
 @import 'components/beta-hub-cards';
 @import 'components/nhsuk-header';
 @import 'components/sideways-navigation';
@@ -135,7 +135,6 @@ h3, .nhsuk-heading-m {
 }
 
 
-
 // styling for service name header
 .nhsuk-header__link--service-short-name {
     align-items: center;
@@ -162,7 +161,8 @@ h3, .nhsuk-heading-m {
     z-index: 1;
 }
 
-.nhsuk-header__container {
+// Causing search to be 2/3rds
+.nhsuk-header__container2 {
     display: flex;
     justify-content: space-between;
 }
