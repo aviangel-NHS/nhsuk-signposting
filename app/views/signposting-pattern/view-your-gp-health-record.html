@@ -1,0 +1,70 @@
+{% extends 'template-no-header-or-footer.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+{% block pageTitle %}
+  View your GP health record - NHS
+{% endblock %}
+
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/nhsuk.css" rel="stylesheet">
+{% endblock %}
+
+
+
+<!-- Access your NHS accountcontent -->
+{% block content %}
+<br>
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <article>
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+
+          <section>
+            <h2>View your GP health record online</h2>
+        
+            <p>You can view your GP health record online by logging into the NHS App or the NHS website.</p>
+            <p>To view your GP record online, you must be:</p>
+            <ul>
+              <li><a href="#">registered with a GP surgery</a></li>
+              <li>aged 16 or over</li>
+            </ul>
+                
+            <button class="nhsuk-button nhsuk-button-full-width" data-module="nhsuk-button" type="submit">
+              Log in or open NHS App
+            </button>
+          
+            <button class="nhsuk-button nhsuk-button--secondary nhsuk-button-full-width" data-module="nhsuk-button" type="submit">
+              Create an account
+            </button>
+      
+          </section>
+ 
+        </div>
+      </div>
+    </article>
+
+  </div>
+</div>
+
+<br><br>
+
+
+
+
+{% endblock %}
+
+
+{% block pageScripts %}
+<script>
+  $( document ).ready(function() {
+    $('a[href=""], button.nhsuk-search__submit').click(function(e) {
+      e.preventDefault();
+    });
+  });
+</script>
+{% endblock %}

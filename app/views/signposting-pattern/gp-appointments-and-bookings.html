@@ -1,0 +1,82 @@
+{% extends 'template-no-header-or-footer.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+{% block pageTitle %}
+  View your GP health record - NHS
+{% endblock %}
+
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/nhsuk.css" rel="stylesheet">
+{% endblock %}
+
+
+
+<!-- Access your NHS accountcontent -->
+{% block content %}
+<br>
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <article>
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+
+          <section>
+            <h2>How to book, change or cancel an appointment</h2>
+            <p>If you need to book or change an appointment at your GP surgery, you may be able to:</p>
+            <ul>
+              <li>use the appointment form on your GP surgery's website</li>
+              <li><a href="#">log into the NHS App or the NHS website</a> - you can <a href="#">create an account</a> if you do not have one</li> 
+              <li>contact the surgery by phone</li> 
+              <li>go to the surgery and ask the receptionist</li> 
+            </ul>
+            <p>Before booking an appointment, your GP surgery may ask what you need help with.</p>
+      
+      
+              <div class="nhsuk-action-link">
+                
+                <a class="nhsuk-action-link__link" href="#">
+                
+                  <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="36" width="36">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+                  </svg>
+                  <span class="nhsuk-action-link__text">Find your GP surgery</span>
+                </a>
+              </div>
+              
+              <div class="nhsuk-inset-text">
+                <span class="nhsuk-u-visually-hidden">Information: </span>
+                <p>Call your GP surgery if you need an urgent appointment. If your GP surgery is closed, a recorded message will tell you who to contact.</p>
+              </div>
+      
+          </section>
+      
+ 
+        </div>
+      </div>
+    </article>
+
+  </div>
+</div>
+
+<br><br>
+
+
+
+
+{% endblock %}
+
+
+{% block pageScripts %}
+<script>
+  $( document ).ready(function() {
+    $('a[href=""], button.nhsuk-search__submit').click(function(e) {
+      e.preventDefault();
+    });
+  });
+</script>
+{% endblock %}

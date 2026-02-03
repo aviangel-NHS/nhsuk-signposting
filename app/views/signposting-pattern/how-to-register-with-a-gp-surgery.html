@@ -1,0 +1,80 @@
+{% extends 'template-no-header-or-footer.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+{% block pageTitle %}
+  View your GP health record - NHS
+{% endblock %}
+
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/nhsuk.css" rel="stylesheet">
+{% endblock %}
+
+
+
+<!-- Access your NHS accountcontent -->
+{% block content %}
+<br>
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <article>
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+
+          <section>
+            <h2>Register or change GP surgery online</h2>
+            
+            <ol>
+              <li>Enter a postcode or use your location to find GP surgeries in the area you want to register. Most people need to register near where they live but some surgeries accept patients from further away.</li>
+              <li>Choose a surgery you want to register with.</li>
+              <li>Complete the registration form. This takes about 15 minutes for each person you want to register</li>
+            </ol>
+            
+              <p>You do not need to tell your current GP surgery you're changing. They'll be told automatically once you're registered with your new GP surgery.</p>
+          
+            <div class="nhsuk-action-link">
+              
+              <a class="nhsuk-action-link__link" href="#">
+              
+                <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="36" width="36">
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+                </svg>
+                <span class="nhsuk-action-link__text">Find a GP to register with</span>
+              </a>
+            </div>
+      
+            <br>
+            <p>You can also change your GP surgery by <a href="/login">logging into the NHS App or the NHS website</a>. 
+              You can <a href="/account-g">create an account</a> if you do not have one.</p>
+      
+          </section>
+      
+ 
+        </div>
+      </div>
+    </article>
+
+  </div>
+</div>
+
+<br><br>
+
+
+
+
+{% endblock %}
+
+
+{% block pageScripts %}
+<script>
+  $( document ).ready(function() {
+    $('a[href=""], button.nhsuk-search__submit').click(function(e) {
+      e.preventDefault();
+    });
+  });
+</script>
+{% endblock %}
